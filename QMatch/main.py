@@ -1,6 +1,6 @@
 import xlrd
 url=input("ExcelURL:")
-with open("data.txt","r") as d:
+with open("data.txt","r",encoding='utf-8') as d:
     datalistr=d.readlines()
     datalist=[]
     result=[]
