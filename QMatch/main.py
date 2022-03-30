@@ -24,3 +24,4 @@ for i in datalist:
             result.remove(i)
 print(result)
 # print(datalist)
+input()
