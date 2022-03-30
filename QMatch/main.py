@@ -22,5 +22,6 @@ for i in datalist: #比对
         b=a.find(i)
         if b!=-1:
             result.remove(i)
+            break
 print(result)
 input("按回车键以退出...")
