@@ -1,4 +1,5 @@
 import xlrd
+
 url=input("ExcelURL:")
 with open("data.txt","r",encoding='utf-8') as d: #读入数据库
     datalistr=d.readlines()
@@ -22,4 +23,4 @@ for i in datalist: #比对
         if b!=-1:
             result.remove(i)
 print(result)
-input()
+input("按回车键以退出...")
