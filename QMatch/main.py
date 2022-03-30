@@ -7,7 +7,7 @@ with open("data.txt","r",encoding='utf-8') as d: #读入数据库
     result=[]
     for i in datalistr:
         datalist.append(i.strip())
-ex=xlrd.open_workbook(url.strip(") #读入excel
+ex=xlrd.open_workbook(url.strip(")) #读入excel
 table = ex.sheets()[1]
 nrows = table.nrows
 name=table.col_values(0, start_rowx=0, end_rowx=nrows)
