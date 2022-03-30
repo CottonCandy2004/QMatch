@@ -1,5 +1,5 @@
 import xlrd
-
+url=input("ExcelURL:")
 with open("data.txt","r") as d:
     datalistr=d.readlines()
     datalist=[]
@@ -8,7 +8,7 @@ with open("data.txt","r") as d:
         datalist.append(i.strip())
         result.append(i.strip())
 # 这里插入excel读入
-ex=xlrd.open_workbook(r"示例.xlsx")
+ex=xlrd.open_workbook(url)
 table = ex.sheets()[1]
 nrows = table.nrows
 name=table.col_values(0, start_rowx=0, end_rowx=nrows)
