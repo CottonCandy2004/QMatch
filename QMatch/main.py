@@ -1,6 +1,6 @@
 import xlrd
 
-print("QMatch v0.1.0 内部版本 Preview Version")
+print("QMatch v0.1.0 Preview Version")
 print("Code by github@CottonCandy2004 Private Programme")
 print("*If you want to the Source Code, please ask github@CottonCandy2004")
 url=input("ExcelURL:")
