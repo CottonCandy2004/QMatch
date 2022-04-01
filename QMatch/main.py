@@ -1,8 +1,9 @@
 import xlrd
+from tkinter import Tk
 
-print("QMatch v0.1.0 内部版本 Preview Version")
-print("Code by github@CottonCandy2004 Private Programme")
-print("*If you want to the Source Code, please ask github@CottonCandy2004")
+print("QMatch v0.1.1 Preview Version")
+print("Code by github@CottonCandy2004")
+print("*If you want to the Source Code, please view github@CottonCandy2004")
 url=input("ExcelURL:")
 print("读入校对库...")
 with open("data.txt","r",encoding='utf-8') as d: #读入数据库
@@ -31,4 +32,10 @@ for i in datalist: #比对
             break
 print("\n以下人员未在当前会议室：")
 print(result)
+r = Tk()
+r.withdraw()
+r.clipboard_append(result)
+r.update()
+r.destroy()
+print("结果已推送到剪贴板。")
 input("按回车键以退出...")
