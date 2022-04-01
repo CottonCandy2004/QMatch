@@ -1,15 +1,9 @@
 import xlrd
 from tkinter import Tk
 
-<<<<<<< HEAD
 print("QMatch v0.1.1 Preview Version")
 print("Code by github@CottonCandy2004")
 print("*If you want to the Source Code, please view github@CottonCandy2004")
-=======
-print("QMatch v0.1.0 Preview Version")
-print("Code by github@CottonCandy2004")
-print("*If you want to the Source Code, please view github@CottonCandy2004")
->>>>>>> de9eb6541e84abb8560dfad3df0cb6c34da5b2a7
 url=input("ExcelURL:")
 print("读入校对库...")
 with open("data.txt","r",encoding='utf-8') as d: #读入数据库
